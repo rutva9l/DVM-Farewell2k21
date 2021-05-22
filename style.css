@@ -7,7 +7,7 @@
 
 .wrapper {
   display: flex;
-  background-color: #f6b142;
+  background-color: #ffb100;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -311,6 +311,7 @@ p {
 }
 .profile-image {
     height: 70px;
+    background-image: url(/assets/images/profile-img.jpeg);
     width:70px;
 }
 
