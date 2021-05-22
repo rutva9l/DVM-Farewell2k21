@@ -1,0 +1,320 @@
+.body {
+  /* background-color:red; */
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  background-color: #f6b142;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#desktopbg {
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+#mobilebg{
+    display:none;
+}
+.divright {
+  /* background-color: yellow; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divleft {
+  /* background-color: blue; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* <------screen-------> */
+.screen {
+  /* background-color: red; */
+  align-items: center;
+  padding-top: 10px;
+  width: 40vw;
+  height: 43vh;
+  z-index: 2;
+  transform: translate(0%, -16%) perspective(1500px) rotateX(-7.5deg)
+    rotateY(-15deg) rotateZ(0deg) skew(-2deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+/* <-------Profiles--------> */
+.card1 {
+  min-width: 80%;
+  height: 20%;
+  border-radius: 1em;
+  text-align: center;
+  background: rgb(243, 243, 243);
+  background: linear-gradient(
+    to bottom,
+    rgb(243, 243, 243, 0.6),
+    rgb(243, 243, 243, 0.4)
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2.5%;
+  margin: 0 10%;
+}
+.carousel-item {
+  text-align: center;
+  justify-content: center;
+  height: 42vh;
+  /* background-color: red; */
+}
+.card1 {
+  height: 35vh;
+  width: 80%;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* <------Glassmorphism------> */
+  background: white;
+  padding: 2%;
+  padding-left: 4%;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+/* profile - css */
+.profile-image {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background-image: url(/assets/images/profile-img.jpeg);
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  z-index: 3;
+}
+.profile-info {
+  height: 30%;
+  width: 60%;
+  margin-bottom: 1vh;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 100;
+}
+.profile-info p {
+  margin-bottom: 0;
+}
+
+.profile-name {
+  font-size: 2vw;
+  margin: 10px auto 0;
+  font-family: "Poppins", sans-serif;
+  color: rgb(29, 29, 29);
+  font-family: "Proza libre";
+  font-weight: 600;
+  margin-bottom: 5%;
+}
+
+p {
+  color: rgb(70, 70, 70);
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 0;
+  font-family: "Proza libre";
+}
+/* <-------div left---------> */
+.details {
+  position: fixed;
+  top: 27%;
+  left: 10%;
+  color: white;
+  padding-right: 30px;
+}
+
+.headline {
+  overflow: hidden;
+}
+
+.headline h1 {
+  font-size: 74px;
+  font-family: "Poppins";
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0px 0px 20px rgba(34, 34, 34, 0.1);
+  animation: byBottom 1s 1s ease both;
+  animation-delay: 0s;
+}
+
+@keyframes byBottom {
+  0% {
+    transform: translateY(150%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.underline {
+  width: 100%;
+  position: absolute;
+  height: 6px;
+  background-color: red;
+  animation: linkAfter 0.5s 1s ease both;
+  transition: background-color 0.1s ease both;
+  animation-delay: s;
+}
+
+@keyframes linkAfter {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.date span {
+  padding: 10px 20px 10px 0;
+  font-size: 22px;
+  position: absolute;
+  bottom: -75px;
+  /* background-color: red; */
+}
+
+#date {
+  left: 0px;
+  animation: bySideRight 1s 2s ease both;
+  animation-delay: 0s;
+}
+
+#day {
+  animation: bySideLeft 1s 2s ease both;
+  animation-delay: 0s;
+}
+@keyframes bySideRight {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bySideLeft {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* <-------MOBILE RESPONSE -------> */
+@media screen and (max-width: 768px) and (min-width:0px) {
+
+#desktopbg{
+    display:none;
+}
+#mobilebg {
+    display:flex;
+    width: 100vw;
+    transform: scale(1.5);
+    position: absolute;
+    
+}
+.wrapper {
+    flex-direction: column-reverse;
+    height:100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url('assets/images/zoomed\ in\ diffsize.png');
+    background-repeat: no-repeat;
+    background-size:100vw;
+    background-position: center top;
+}
+.divright {
+    padding-top: 35vw;
+}
+
+.screen {
+    transform: translate(0%, 0%) perspective(0px) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    /* background-color: red; */
+    width:90%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+.card1 {
+    height: 40vw;
+    padding: 0;
+}
+.carousel-item{
+    /* background-color: blue; */
+    height: 30vh;
+    padding:0;
+    margin: 0;
+}
+
+
+/* div-left */
+.details {
+    /* background-color: red; */
+    margin-top: 30vh;
+}
+.headline h1 { 
+    font-size: 45px;
+}
+/* <-----profile details-----> */
+.profile-name {
+    font-size: 6vw;
+}
+p {
+    font-size:3vw;
+}
+.profile-image {
+    height: 70px;
+    width:70px;
+}
+
+
+
+
+}
