@@ -368,7 +368,7 @@ p {
   .screen {
     transform: translate(0%, 0%) perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     /* background-color: red; */
-    width: 90%;
+    width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
