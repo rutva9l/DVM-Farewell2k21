@@ -351,14 +351,14 @@ p {
 
   .wrapper {
     flex-direction: column-reverse;
-    height: 105vh;
+    height: 107vh;
     width: 100vw;
     overflow: hidden;
     background-image: url('assets/images/Frontzoomedwobg.png');
     background-repeat: no-repeat;
     background-size: 125vw;
     background-position: center top;
-    top: -5vh;
+    top: -7vh;
   }
 
   .divright {
