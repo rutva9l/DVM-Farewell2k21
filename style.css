@@ -129,7 +129,6 @@
   margin: 10px auto 0;
   font-family: "Poppins", sans-serif;
   color: rgb(29, 29, 29);
-  font-family: "Proza libre";
   font-weight: 600;
   margin-bottom: 5%;
 }
@@ -139,7 +138,6 @@ p {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   margin-top: 0;
-  font-family: "Proza libre";
 }
 /* <-------div left---------> */
 .details {
