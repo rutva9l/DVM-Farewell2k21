@@ -3,12 +3,13 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  background-color: #ffb100;
 }
 
 .wrapper {
   display: flex;
-  background-color: #ffb100;
-  height: 100vh;
+  background-image: linear-gradient(147deg, #e8cf30 5%, #c94545 60%, #e8cf30 80%);
+  height: 600vh;
   width: 100vw;
   overflow: hidden;
   flex-direction: row;
@@ -50,6 +51,8 @@
   padding-top: 10px;
   width: 40vw;
   height: 43vh;
+  position: absolute;
+  top: 4.8%;
   z-index: 2;
   transform: translate(0%, -16%) perspective(1500px) rotateX(-7.5deg) rotateY(-15deg) rotateZ(0deg) skew(-2deg, 0deg);
   transform-style: preserve-3d;
@@ -104,17 +107,68 @@
 }
 
 /* profile - css */
-.profile-image {
-  width: 10vw;
-  height: 10vw;
+
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 9% !important;
+  margin-bottom: 3rem !important;
+}
+
+
+.sanchit,
+.anjali,
+.nayan,
+.raghav,
+.manish,
+.hardik,
+.abhishek,
+.divyam,
+.nishant {
+  width: 16vw;
+  height: 14vw;
   border-radius: 50%;
-  background-image: url(/assets/images/profile-img.jpeg);
+  background-image: url(/assets/images/sanchitBack.jpeg);
   background-size: cover;
   text-align: center;
   justify-content: center;
   display: flex;
   z-index: 3;
 }
+
+.anjali {
+  background-image: url(./assets/images/anjaliFront.png);
+}
+
+.nayan {
+  background-image: url(./assets/images/);
+}
+
+.raghav {
+  background-image: url(./assets/images/raghavBack.jpeg);
+}
+
+.manish {
+  background-image: url(./assets/images/);
+}
+
+.hardik {
+  background-image: url(./assets/images/);
+}
+
+.abhishek {
+  background-image: url(./assets/images/abhishekVid.jpeg);
+}
+
+.divyam {
+  background-image: url(./assets/images/divyamBack.jpeg);
+}
+
+.nishant {
+  background-image: url(./assets/images/);
+}
+
+
 
 .profile-info {
   height: 30%;
@@ -132,7 +186,7 @@
 }
 
 .profile-name {
-  font-size: 2vw;
+  font-size: 1.9vw;
   margin: 10px auto 0;
   font-family: "Poppins", sans-serif;
   color: rgb(29, 29, 29);
@@ -257,6 +311,10 @@ p {
 /* <-------MOBILE RESPONSE -------> */
 @media screen and (max-width: 768px) and (min-width:0px) {
 
+  body {
+    background-color: #ffb100 !important;
+  }
+
   #desktopbg {
     display: none;
   }
@@ -291,11 +349,12 @@ p {
     height: 100%;
     padding: 0;
     margin: 0;
+    position: unset !important;
   }
 
   .card1 {
     height: 40vw;
-    padding: 0;
+    padding: 10px;
   }
 
   .carousel-item {
@@ -320,6 +379,7 @@ p {
     text-align: center;
   }
 
+
   br {
     display: none;
   }
@@ -330,7 +390,8 @@ p {
 
   /* <-----profile details-----> */
   .profile-name {
-    font-size: 6vw;
+    font-size: 5vw;
+    margin: 10px 0;
   }
 
   p {
@@ -345,6 +406,20 @@ p {
     height: 70px;
     background-image: url(/assets/images/profile-img.jpeg);
     width: 70px;
+  }
+
+
+  .sanchit,
+  .anjali,
+  .nayan,
+  .raghav,
+  .manish,
+  .hardik,
+  .abhishek,
+  .divyam,
+  .nishant {
+    height: 30vw;
+    width: 30vw;
   }
 
 
