@@ -104,8 +104,7 @@
   align-items: center;
   /* <------Glassmorphism------> */
   background: white;
-  padding: 2%;
-  padding-left: 4%;
+  padding: 2% 0 2% 4%;
   border-radius: 10px;
 
 
@@ -194,7 +193,7 @@
 
 .profile-info p {
   margin-bottom: 0;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .profile-name {
