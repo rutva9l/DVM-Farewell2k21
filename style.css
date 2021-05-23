@@ -13,16 +13,20 @@
   overflow: hidden;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
 }
+
 #desktopbg {
   position: absolute;
   z-index: 1;
   height: 100vh;
   width: 100vw;
 }
-#mobilebg{
-    display:none;
+
+#mobilebg {
+  display: none;
 }
+
 .divright {
   /* background-color: yellow; */
   width: 100%;
@@ -30,6 +34,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .divleft {
   /* background-color: blue; */
   width: 100%;
@@ -46,8 +51,7 @@
   width: 40vw;
   height: 43vh;
   z-index: 2;
-  transform: translate(0%, -16%) perspective(1500px) rotateX(-7.5deg)
-    rotateY(-15deg) rotateZ(0deg) skew(-2deg, 0deg);
+  transform: translate(0%, -16%) perspective(1500px) rotateX(-7.5deg) rotateY(-15deg) rotateZ(0deg) skew(-2deg, 0deg);
   transform-style: preserve-3d;
 }
 
@@ -58,11 +62,9 @@
   border-radius: 1em;
   text-align: center;
   background: rgb(243, 243, 243);
-  background: linear-gradient(
-    to bottom,
-    rgb(243, 243, 243, 0.6),
-    rgb(243, 243, 243, 0.4)
-  );
+  background: linear-gradient(to bottom,
+      rgb(243, 243, 243, 0.6),
+      rgb(243, 243, 243, 0.4));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,12 +72,14 @@
   padding-top: 2.5%;
   margin: 0 10%;
 }
+
 .carousel-item {
   text-align: center;
   justify-content: center;
   height: 42vh;
   /* background-color: red; */
 }
+
 .card1 {
   height: 35vh;
   width: 80%;
@@ -98,6 +102,7 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
 /* profile - css */
 .profile-image {
   width: 10vw;
@@ -110,6 +115,7 @@
   display: flex;
   z-index: 3;
 }
+
 .profile-info {
   height: 30%;
   width: 60%;
@@ -120,6 +126,7 @@
   flex-direction: column;
   z-index: 100;
 }
+
 .profile-info p {
   margin-bottom: 0;
 }
@@ -139,6 +146,7 @@ p {
   font-family: "Poppins", sans-serif;
   margin-top: 0;
 }
+
 /* <-------div left---------> */
 .details {
   position: fixed;
@@ -192,11 +200,12 @@ p {
   }
 }
 
-.date span {
-  padding: 10px 20px 10px 0;
+.date p {
+  padding: 10px 0px 10px 0;
   font-size: 22px;
   position: absolute;
   bottom: -75px;
+  color: white;
   /* background-color: red; */
 }
 
@@ -210,6 +219,7 @@ p {
   animation: bySideLeft 1s 2s ease both;
   animation-delay: 0s;
 }
+
 @keyframes bySideRight {
   0% {
     transform: translateX(150%);
@@ -247,71 +257,96 @@ p {
 /* <-------MOBILE RESPONSE -------> */
 @media screen and (max-width: 768px) and (min-width:0px) {
 
-#desktopbg{
-    display:none;
-}
-#mobilebg {
-    display:flex;
+  #desktopbg {
+    display: none;
+  }
+
+  #mobilebg {
+    display: flex;
     width: 100vw;
     transform: scale(1.5);
     position: absolute;
-    
-}
-.wrapper {
+
+  }
+
+  .wrapper {
     flex-direction: column-reverse;
-    height:100vh;
+    height: 100vh;
     width: 100vw;
     overflow: hidden;
     background-image: url('assets/images/zoomed\ in\ diffsize.png');
     background-repeat: no-repeat;
-    background-size:100vw;
+    background-size: 100vw;
     background-position: center top;
-}
-.divright {
-    padding-top: 35vw;
-}
+  }
 
-.screen {
-    transform: translate(0%, 0%) perspective(0px) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  .divright {
+    padding-top: 35vw;
+  }
+
+  .screen {
+    transform: translate(0%, 0%) perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     /* background-color: red; */
-    width:90%;
-    height:100%;
-    padding:0;
-    margin:0;
-}
-.card1 {
+    width: 90%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card1 {
     height: 40vw;
     padding: 0;
-}
-.carousel-item{
+  }
+
+  .carousel-item {
     /* background-color: blue; */
     height: 30vh;
-    padding:0;
+    padding: 0;
     margin: 0;
-}
+  }
 
+  .carousel-indicators,
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none !important;
+  }
 
-/* div-left */
-.details {
+  /* div-left */
+  .details {
     /* background-color: red; */
-    margin-top: 30vh;
-}
-.headline h1 { 
-    font-size: 45px;
-}
-/* <-----profile details-----> */
-.profile-name {
+    margin-top: 40vh;
+    padding-right: 0;
+    width: 80vw;
+    text-align: center;
+  }
+
+  br {
+    display: none;
+  }
+
+  .headline h1 {
+    font-size: 2.25rem;
+  }
+
+  /* <-----profile details-----> */
+  .profile-name {
     font-size: 6vw;
-}
-p {
-    font-size:3vw;
-}
-.profile-image {
+  }
+
+  p {
+    font-size: 3vw;
+  }
+
+  .date p {
+    width: 80vw;
+  }
+
+  .profile-image {
     height: 70px;
     background-image: url(/assets/images/profile-img.jpeg);
-    width:70px;
-}
+    width: 70px;
+  }
+
 
 
 
