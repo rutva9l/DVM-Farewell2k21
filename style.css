@@ -351,7 +351,7 @@ p {
 
   .wrapper {
     flex-direction: column-reverse;
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
     overflow: hidden;
     background-image: url('assets/images/Frontzoomedwobg.png');
