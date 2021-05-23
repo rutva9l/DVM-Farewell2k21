@@ -8,13 +8,25 @@
 
 .wrapper {
   display: flex;
-  background-image: linear-gradient(147deg, #e8cf30 5%, #c94545 60%, #e8cf30 80%);
-  height: 600vh;
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
   flex-direction: row;
   justify-content: space-between;
+  animation: colorChange 27s infinite;
   position: fixed;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #e8cf30;
+    }
+    60% {
+        background-color: #c94545;
+    }
+    100% {
+        background-color: #e8cf30;
+    }
 }
 
 #desktopbg {
@@ -235,13 +247,23 @@ p {
 }
 
 .underline {
-  width: 100%;
-  position: absolute;
-  height: 6px;
-  background-color: red;
-  animation: linkAfter 0.5s 1s ease both;
-  transition: background-color 0.1s ease both;
-  animation-delay: s;
+    width: 100%;
+    position: absolute;
+    height: 6px;
+    animation: linkAfter 0.5s 1s ease both, colorChange2 27s infinite;
+    transition: background-color 0.1s ease both;
+}
+
+@keyframes colorChange2 {
+    0% {
+        background-color: rgb(206, 7, 27);
+    }
+    60% {
+        background-color: #e8cf30;
+    }
+    100% {
+        background-color: rgb(206, 7, 27);
+    }
 }
 
 @keyframes linkAfter {
@@ -332,10 +354,12 @@ p {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    background-color: #ffb100;
     background-image: url('assets/images/zoomed\ in\ diffsize.png');
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position: center top;
+    animation: none;
   }
 
   .divright {
@@ -387,6 +411,11 @@ p {
 
   .headline h1 {
     font-size: 2.25rem;
+  }
+  
+  .underline{
+    background-color: red;
+    animation: none;
   }
 
   /* <-----profile details-----> */
