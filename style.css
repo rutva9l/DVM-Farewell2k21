@@ -104,17 +104,60 @@
 }
 
 /* profile - css */
-.profile-image {
+
+.sanchit,
+.anjali,
+.nayan,
+.raghav,
+.manish,
+.hardik,
+.abhishek,
+.divyam,
+.nishant {
   width: 10vw;
   height: 10vw;
   border-radius: 50%;
-  background-image: url(/assets/images/profile-img.jpeg);
+  background-image: url(/assets/images/sanchitBack.jpeg);
   background-size: cover;
   text-align: center;
   justify-content: center;
   display: flex;
   z-index: 3;
 }
+
+.anjali {
+  background-image: url(./assets/images/anjaliFront.png);
+}
+
+.nayan {
+  background-image: url(./assets/images/);
+}
+
+.raghav {
+  background-image: url(./assets/images/raghavBack.jpeg);
+}
+
+.manish {
+  background-image: url(./assets/images/);
+}
+
+.hardik {
+  background-image: url(./assets/images/);
+}
+
+.abhishek {
+  background-image: url(./assets/images/abhishekVid.jpeg);
+}
+
+.divyam {
+  background-image: url(./assets/images/divyamBack.jpeg);
+}
+
+.nishant {
+  background-image: url(./assets/images/);
+}
+
+
 
 .profile-info {
   height: 30%;
@@ -132,7 +175,7 @@
 }
 
 .profile-name {
-  font-size: 2vw;
+  font-size: 1.9vw;
   margin: 10px auto 0;
   font-family: "Poppins", sans-serif;
   color: rgb(29, 29, 29);
