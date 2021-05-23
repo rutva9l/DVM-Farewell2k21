@@ -13,7 +13,7 @@
   overflow: hidden;
   flex-direction: row;
   justify-content: space-between;
-  animation: colorChange 27s infinite;
+  animation: colorChange 10s infinite;
   position: fixed;
 }
 
@@ -250,7 +250,7 @@ p {
     width: 100%;
     position: absolute;
     height: 6px;
-    animation: linkAfter 0.5s 1s ease both, colorChange2 27s infinite;
+    animation: linkAfter 0.5s 1s ease both, colorChange2 10s infinite;
     transition: background-color 0.1s ease both;
 }
 
