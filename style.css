@@ -64,7 +64,7 @@
   width: 40vw;
   height: 43vh;
   position: absolute;
-  top: 4.8%;
+  top: 30%;
   z-index: 2;
   transform: translate(0%, -16%) perspective(1500px) rotateX(-7.5deg) rotateY(-15deg) rotateZ(0deg) skew(-2deg, 0deg);
   transform-style: preserve-3d;
