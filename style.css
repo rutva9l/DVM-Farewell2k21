@@ -354,12 +354,11 @@ p {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background-color: #ffb100;
-    background-image: url('assets/images/zoomed\ in\ diffsize.png');
+    background-image: url('assets/Frontzoomedwobg.png');
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 125vw;
     background-position: center top;
-    animation: none;
+    top: -5vh;
   }
 
   .divright {
@@ -377,14 +376,15 @@ p {
   }
 
   .card1 {
-    height: 40vw;
+    height: 50vw;
     padding: 10px;
     background: rgb(237 237 237 / 97%);
   }
 
   .carousel-item {
     /* background-color: blue; */
-    height: 30vh;
+    top: 5vh;
+    height: 50vh;
     padding: 0;
     margin: 0;
   }
@@ -411,11 +411,6 @@ p {
 
   .headline h1 {
     font-size: 2.25rem;
-  }
-  
-  .underline{
-    background-color: red;
-    animation: none;
   }
 
   /* <-----profile details-----> */
